@@ -305,12 +305,12 @@ body.alternate-theme .hero-art {
 }
 /* 浅色模式：视频区使用雾蓝 */
 .video-section {
-  background: #ebe8f1;
+  background: #ccc2d0;
 }
 
 /* 浅色模式：联系区使用淡灰紫 */
 .contact-section {
-  background: #ebe8f1;
+  background: #ccc2d0;
 }
 /* 深色模式：视频区使用深蓝 */
 body.alternate-theme .video-section {
