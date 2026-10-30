@@ -118,3 +118,206 @@
     gap: 32px;
   }
 }
+/* ===== 紫色 × 蓝色主题 ===== */
+
+/* 浅色模式：奶油白 × 雾蓝 */
+:root {
+  --paper: #f3f1e9;
+  --panel: #e4e8ed;
+  --art: #e4e8ed;
+
+  --ink: #192b46;
+  --muted: #53647b;
+
+  --accent: #354f77;
+  --on-accent: #ffffff;
+  --line: #c4ccd6;
+
+  --button-gradient:
+    linear-gradient(120deg, #263f64, #48668a);
+}
+
+/* 深色模式 */
+body.alternate-theme {
+  --paper: #101426;
+  --panel: #19213a;
+  --art: #19213a;
+
+  --ink: #f1f2ff;
+  --muted: #b8c2dd;
+
+  --accent: #c5b0ff;
+  --on-accent: #151a30;
+  --line: #354365;
+
+  --button-gradient: linear-gradient(120deg, #c5b0ff, #8fcaff);
+}
+
+/* 主要按钮：蓝紫渐变 */
+.button.primary {
+  background: var(--button-gradient);
+  color: var(--on-accent);
+  border-color: transparent;
+}
+
+/* 首页和章节标题中的强调文字 */
+.hero h1 em,
+h2 em {
+  color: var(--accent);
+}
+
+/* 首页右侧卡片 */
+.hero-art {
+  background: var(--panel);
+  border-color: var(--line);
+}
+
+body.alternate-theme .hero-art {
+  color: var(--ink);
+}
+
+/* 项目分类和次要按钮 */
+.filters button.active {
+  background: var(--accent);
+  color: var(--on-accent);
+  border-color: var(--accent);
+}
+
+.button.secondary,
+.nav-cv {
+  border-color: var(--accent);
+}
+
+/* 交互反馈 */
+.project {
+  transition: border-color 0.2s ease;
+}
+
+.project:hover {
+  border-color: var(--accent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .project {
+    transition: none;
+  }
+}
+/* ===== 放大首页信息与项目筛选 ===== */
+
+/* 1. 项目筛选按钮 */
+.filters {
+  gap: 12px;
+  margin-bottom: 36px;
+}
+
+.filters button {
+  padding: 12px 20px;
+  min-height: 46px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+
+.filters button:hover {
+  border-color: var(--accent);
+}
+
+/* 2. 姓名与学校 */
+.hero-name {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.hero-name span {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* 3. 学历说明 */
+.hero-note {
+  font-family: var(--sans);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: var(--ink);
+  margin-top: 28px;
+}
+
+/* 4. 首页底部文字与滚动提示 */
+.hero-bottom {
+  padding-top: 24px;
+  gap: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.7;
+  letter-spacing: 1px;
+}
+
+.hero-bottom > span {
+  color: var(--ink);
+}
+
+.hero-bottom a {
+  color: var(--accent);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+/* 手机：保持醒目，并允许内容换行 */
+@media (max-width: 720px) {
+  .filters {
+    gap: 9px;
+  }
+
+  .filters button {
+    padding: 10px 14px;
+    font-size: 13px;
+    min-height: 44px;
+  }
+
+  .hero-name {
+    font-size: 20px;
+  }
+
+  .hero-name span {
+    display: block;
+    margin: 6px 0 0;
+    font-size: 15px;
+  }
+
+  .hero-note {
+    font-size: 14px;
+  }
+
+  .hero-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 11px;
+  }
+
+  .hero-bottom a {
+    font-size: 13px;
+  }
+}
+/* 浅色模式：视频区使用雾蓝 */
+.video-section {
+  background: #ebe8f1;
+}
+
+/* 浅色模式：联系区使用淡灰紫 */
+.contact-section {
+  background: #ebe8f1;
+}
+/* 深色模式：视频区使用深蓝 */
+body.alternate-theme .video-section {
+  background: #211f36;
+}
+
+/* 深色模式：联系区使用略带紫色的午夜蓝 */
+body.alternate-theme .contact-section {
+  background: #211f36;
+}

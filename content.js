@@ -1,13 +1,19 @@
 /* 编辑这个文件即可修改全部个人资料。保留英文逗号、引号与括号。
    示例不是你的履历；请逐项替换。Windows 建议用 VS Code 打开整个模板文件夹。 */
 window.PORTFOLIO = {
-  showDemoBanner: true, // 全部替换完成后改成 false
+  showDemoBanner: false, // 全部替换完成后改成 false
   name: "Xue Tianxin",
   initials: "XT",
   role: "MSc Robotics student | Bachelor of Engineering in Artificial Intelligence",
   location: "The University of Manchester / Manchester",
-  bio: "I am a MSc Robotics student at The University of Manchester, interested in exploring the scheduling space where embodied intelligent perception, decision-making and action are integrated.",
-  interests: "My interests include embodied intelligence and Cognitive Robotics. Explore the field of scientific research and pursue further studies to become a robot algorithm engineer.",
+  bio:
+    "I am an MSc Robotics student at the University of Manchester, with a background in artificial intelligence. I am interested in connecting robust visual perception with decision-making and action in embodied intelligent systems.",
+
+  about:
+    "My background in artificial intelligence has developed through projects in face anti-spoofing, hyperspectral classification, object detection and language-model distillation. These experiences have involved implementing models, investigating how they learn and evaluating their behaviour across different data and experimental settings. I am now extending this foundation through my MSc in Robotics.",
+
+  interests:
+    "I hope to pursue further research in embodied intelligence and cognitive robotics, with a particular focus on robust perception. My longer-term goal is to develop algorithms that help robots perceive, reason and act reliably in real-world environments.",
   email: "xuetianxin1@gmail.com", // 例如 name@example.com；留空时显示设置提示，不生成假链接
   github: "https://github.com/xueeux", // 完整 https://github.com/... 地址
   linkedin: "https://www.linkedin.com/in/tianxin-xue-170818445/", // 完整 https://www.linkedin.com/in/.../ 地址
@@ -25,7 +31,7 @@ window.PORTFOLIO = {
     {group: "Practice", items:["Mathematical modelling", "Model reimplementation", "Face-Anti-Spoofing"]}
   ],
   education: [
-    {degree: "MSc Robotics with Extended Research", school: "the University of Manchester, England", dates: "21/09/2026 – 30/06/2028]", detail: "Relevant study: Robotic Systems, Cognitive Robotics and Computer Vision, Software for Robotics."},
+    {degree: "MSc Robotics with Extended Research", school: "the University of Manchester, England", dates: "09/2026 – 06/2028", detail: "Relevant study: Robotic Systems, Cognitive Robotics and Computer Vision, Software for Robotics."},
     {degree: "Bachelor of Engineering in Artificial Intelligence", school: "Jinan University, China", dates: "09/2022-06/2026", detail: "Relevant study: Deep Learning, Machine learning, Natual Languege Processing, Computer Vision, AI principles."}
   ],
   projects: [
